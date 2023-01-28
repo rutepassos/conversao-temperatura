@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: meupod
+  label: conversao-temperatura
+spec:
+  containers:
+  - name: conversao-temperatura
+    image: anapassos/conversao-temperatura:latest
+    ports:
+    - containerPort: 8080
